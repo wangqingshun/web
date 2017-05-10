@@ -1,0 +1,28 @@
+/*
+* @Author: Marte
+* @Date:   2017-04-21 16:08:43
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-05-09 19:04:31
+*/
+ <style type="text/css">
+        .p1{
+            font-family: 宋体;
+            font-size:20pt;
+        }
+        .p2{
+            font-famlie:微软雅黑;
+            font-size:20pt;
+        }
+        .p3{
+            font-size:10pt;
+            color:gray;
+            text-align:center;
+        }
+        a{
+            color:blue;
+        }
+        ul{
+            color:blue;
+            font-style:italic;
+        }
+    </style>
