@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+li{list-style:none;}
+.meun{
+    width:170px;
+    background-image:url(../image/bj.png) ;
+}
+.menu{
+    height:380px;
+    text-align:center;
+    color:black;
+    font-size:20px;
+    font-weight:normal;
+    }
+.img{
+    padding:5px;
+    width:170px;
+    aligen:center;
+}
+.menu ul{
+    list-style-type:none;
+    width:170px;
+}
+.menu li{
+    width:170px;
+    margin:10px;
+    background-image: url(../image/baibiaoti.png) ;
+    padding-left: 5px;
+}
+.menu .specil{
+    background-image:url(../image/lvbiaoti.png);
+    color:white;
+}
