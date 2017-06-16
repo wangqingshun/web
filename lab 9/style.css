@@ -1,20 +1,89 @@
-
-			a:link{color:#522a06;}
-			body{background-image: url(image/bodybg.gif);font-size: 12px;color:brown;font-family: '宋体';}
-			#header{height:205px;background-image:url(image/bg.gif);background-position:center top;}
-			#banner{width:1000px;height:164px;margin:0 auto;position:absolute;left:210px;top:38px;}
-			#nav{height:40px;position: absolute;top:172px;}
-			.nav_body{width:1000px;margin:0 auto;}
-			.nav_content{width:800px;font-weight:bold;color:#fff;padding-left:12px;position:absolute;left:120px;top:12px;}
-			.lil{display:inline;color:#fff;}
-			a{text-decoration: none;}
-			a:hover{color:#f9f603;text-decoration: underline;}
-			#zhong{font-style: bold;color:#fff;display:inline;}
+            a:link
+			{color:#522a06;}
+			body
+			{   background-image: url(image/bodybg.gif);
+				font-size: 12px;
+				color:brown;
+				font-family: '宋体';
+			}
+			#header
+			{   height:205px;
+				background-image:url(image/bg.gif);
+				background-position:center top;
+			}
+			#banner
+			{   width:1000px;
+				height:164px;
+				margin:0 auto;
+				position:absolute;
+				left:210px;
+				top:38px;
+			}
+			#nav
+			{   height:40px;
+				position: absolute;
+				top:172px;
+			}
+			.nav_body
+			{   width:1000px;
+				margin:0 auto;
+			}
+			.nav_content
+			{   width:800px;
+				font-weight:bold;
+				color:#fff;
+				padding-left:12px;
+				position:absolute;
+				left:120px;
+				top:12px;
+			}
+			.lil
+			{
+				display:inline;
+				color:#fff;
+			}
+			a
+			{
+				text-decoration: none;
+			}
+			a:hover
+			{
+				color:#f9f603;
+				text-decoration: underline;
+			}
+			#zhong
+			{
+				font-style: bold;
+				color:#fff;
+				display:inline;
+			}
 			#wang{color:#f9f603;}
 			.nav_rearsh{height:40px;}
-			#yu{width:140px;height:19px;background-color: #f8f5ee;position: absolute;top:8px;left:1000px;}
-			#chi{width:44px;height:21px;background-color: #000;color:#fff; position: absolute;top:10px;left:1150px;}
-			#content{width:1000px;margin:auto;clear:both;}
+			#yu
+            {
+            	width:140px;
+            	height:19px;
+            	background-color: #f8f5ee;
+            	position: absolute;
+            	top:8px;
+            	left:1000px;
+            }
+			#chi
+			{
+				width:44px;
+				height:21px;
+				background-color: #000;
+				color:#fff;
+				position: absolute;
+				top:10px;
+				left:1150px;
+			}
+			#content
+			{
+				width:1000px;
+				margin:auto;
+				clear:both;
+			}
 			#content_top{overflow: hidden;}
 			#content_bottom_right{width:280px;position: absolute;top:20px;float:right;}
 			.news_pic{width:324px;height:243px;float:left;}
@@ -48,4 +117,3 @@
 			.footer_li{display:inline;}
 			#mes{position: absolute;top:1050px;left:400px;}
 			.inline{line-height: 30px;}
-		
