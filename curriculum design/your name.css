@@ -1,0 +1,156 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-04 11:46:46
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-06-25 10:16:00
+*/
+*{
+    margin:0px;
+    padding:0px;
+}
+#header{
+    width:1340px;
+    height:518px;
+}
+#nav{
+    width:1340px;
+    height:50px;
+    background-color:black;
+}
+.header-nav{
+    width:800px;
+    height:50px;
+    float: left;
+}
+.header-nav li{
+    list-style:none;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-left:100px;
+    float:left;
+}
+.twoul ul{
+    list-style:none;
+    display: none;
+    position:relative;
+    left:-100px;
+}
+.twoul ul li{
+    clear:both;
+}
+.header-nav li:hover .twoul ul{
+
+    display:block;
+}
+.header-nav a{
+    text-decoration:none;
+    color:#ffffff;
+}
+.header-nav a:hover{
+    text-decoration:underline;
+    color: #CFB53B;
+    font-weight:bold;
+}
+#search{
+    width:400px;
+    height:50px;
+    float: left;
+    margin-left: 140px;
+}
+input[type="text"]
+{
+    width:200px;
+    height:23px;
+    margin-top: 10px;
+}
+input[type="submit"]
+{
+    width:50px;
+    height:25px;
+}
+.a1:link{
+    text-decoration: none;
+    color:#ffffff;
+}
+.a1:hover{
+    color:#CFB53B;
+    font-weight:bold;
+}
+#banner{
+    width:1340px;
+    height:468px;
+    background-image: url(image/banner2.jpg);
+    clear:both;
+}
+.img1{
+    padding-left:4px;
+    padding-top:4px;
+    float:left;
+}
+.wenzhang{
+    text-align: center;
+}
+.p1{
+    line-height:25px;
+}
+.jianjie{
+    width:800px;
+    height:350px;
+    background-color:#ffffff;
+    padding:10px;
+    position: relative;
+    left:250px;
+    top:200px;
+}
+#center{
+    width:800px;
+    height:300px;
+    position:relative;
+    left:250px;
+    top:130px;
+}
+.td1{
+    background-color:#CCCCCC ;
+}
+td a:link{
+    text-decoration:none;
+    color:#00CCCC;
+}
+td a:hover{
+    text-decoration:underline;
+    color:#99FF99 ;
+}
+table{
+    width:800px;
+    height:300px;
+}
+#footer{
+    width:1000px;
+    height:300px;
+    position:relative;
+    left:220px;
+    top:140px;
+}
+.img3{
+    width:302px;
+    height:190x;
+    border:1px solid black;
+    float: left;
+    margin-left:10px;
+}
+.img3:hover{
+    border:1px solid #99FF99;
+}
+.img4{
+    width:302px;
+    height:186px;
+    border:1px solid black;
+    float: left;
+    background-image:url(image/13.jpg)
+}
+.wang{
+    background-color:#ffffff;
+    position:relative;
+    top:120px;
+    opacity:0.7;
+}
