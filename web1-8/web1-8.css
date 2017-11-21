@@ -1,0 +1,91 @@
+/*
+* @Author: Marte
+* @Date:   2017-11-20 18:56:13
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-11-20 18:57:23
+*/
+body{
+            background-color:#E8E8E8;
+        }
+        #box1{
+            width:234px;
+            height:614px;
+            float: left;
+        }
+        #box2{
+            width:1000px;
+            height:614px;
+            float: left;
+            margin-left:6px;
+        }
+        .image{
+            width:234px;
+            height:305px;
+            float:left;
+            margin-left:10px;
+            margin-bottom:10px;
+            background-color:white;
+        }
+        #b1{
+            background-color:red;
+            width:50px;
+            height:20px;
+            font-size:9px;
+            text-align:center;
+            color:white;
+            position:relative;
+            left:90px;
+        }
+        #b2{
+            background-color:green;
+            width:50px;
+            height:20px;
+            font-size:9px;
+            text-align:center;
+            color:white;
+            position:relative;
+            left:90px;
+        }
+        .image img{
+            width:220px;
+            height:200px;
+        }
+        #image1{
+            width:234px;
+            height:150px;
+        }
+        #image1 img{
+            height:110px;
+            width:110px;
+            float: left;
+        }
+        #image2{
+            width:234px;
+            height:150px;
+            margin-top:5px;
+        }
+        #image2 img{
+            height:80px;
+            width:80px;
+            float: left;
+        }
+        p{
+            text-align:center;
+            font-size:10px;
+        }
+        .b3{
+            width:234px;
+            height:100px;
+            background-color:#FF6633;
+            position:relative;
+            top:-100px;
+            display:block;
+        }
+        .b4{
+            width:234px;
+            height:100px;
+            background-color:#FF6633;
+            position:relative;
+            top:-100px;
+            display:none;
+        }

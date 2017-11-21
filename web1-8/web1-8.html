@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小米官网</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="web1-8.css">
+    <script src="web1-8.js"></script>
+</head>
+<body>
+    <div id="box1">
+        <img src="images/web9.jpg" alt="图片一"/>
+    </div>
+    <div id="box2">
+        <div class="image">
+            <div id="b1" >享9折</div>
+            <img src="images/web1.jpg" alt="图片二"/>
+            <p style="color:black">小米电视4A&nbsp;32</p>
+            <p style="color:#A0A0A0">64位四核处理器/1GB+4GB大内存</p>
+            <p style="color:orange">9999元</p>
+            <div class="b4" >
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/web2.png" alt="图片三"/>
+            <p style="color:black">小米电视4A&nbsp;49英寸</p>
+            <p style="color:#A0A0A0">2GB+8GB大储存/高清HDR</p>
+            <p style="color:orange">2399元</p>
+            <div class="b4">
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+        <div id="b2">新品</div>
+            <img src="images/web3.jpg" alt="图片四"/>
+            <p style="color:black">小米笔记本Pro&nbsp;15.6英寸</p>
+            <p style="color:#A0A0A0">全金属强化机身/FHD全贴合屏幕</p>
+            <p style="color:orange">5599元</p>
+            <div class="b4">
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/web4.jpg" alt="图片五"/>
+            <p style="color:black">小米笔记本Air &nbsp;13.3"i7处理器</p>
+            <p style="color:#A0A0A0">Intel酷睿i7处理器，8GB+256GB</p>
+            <p style="color:orange">5999元</p>
+            <div class="b4">
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/web5.jpg" alt="图片六"/>
+            <p style="color:black">米家恒温电水壶</p>
+            <p style="color:#A0A0A0">水温智能控制，304不锈钢内胆</p>
+            <p style="color:orange">199元</p>
+            <div class="b4">
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+        <div id="b2">新品</div>
+            <img src="images/web6.jpg" alt="图片七"/>
+            <p style="color:black">智米全直流变频空调</p>
+            <p style="color:#A0A0A0">一级能效，强劲冷暖</p>
+            <p style="color:orange">4399元</p>
+            <div class="b4">
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/web7.jpg" alt="图片八"/>
+            <p style="color:black">小米净水器（厨上式）增强版</p>
+            <p style="color:#A0A0A0">400加仑大流量，纯水更多，废水更少</p>
+            <p style="color:orange">1499元</p>
+            <div class="b4">
+                <p style="color:white">很不错，超级轻，画面超级好</p>
+                <p style="color:white">很满意，物美价廉，推荐购...</p>
+            </div>
+        </div>
+        <div class="image">
+            <div id="image1">
+                <div style="float:left ">
+                    <p style="color:black">小白摄像机</p>
+                    <p style="color:orange">399元</p>
+                </div>
+                <img src="images/web8.jpg" alt="图片九"/>
+            </div>
+            <div id="image2">
+                <div style="float:left ">
+                    <p style="font-size:20px">浏览更多</p>
+                    <p style="color:#A0A0A0">热门</p>
+                </div>
+                <img src="images/web10.png" alt="图片十"/>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+        var imag = document.getElementsByClassName("image");
+                imag[0].onmouseover = function(){
+                    imag[0].children[5].className = "b3";
+                }
+                imag[0].onmouseout = function(){
+                   imag[0].children[5].className = "b4";
+                }
+                imag[1].onmouseover = function(){
+                    imag[1].children[4].className = "b3";
+                }
+                imag[1].onmouseout = function(){
+                   imag[1].children[4].className = "b4";
+                }
+                imag[2].onmouseover = function(){
+                    imag[2].children[5].className = "b3";
+                }
+                imag[2].onmouseout = function(){
+                   imag[2].children[5].className = "b4";
+                }
+                imag[3].onmouseover = function(){
+                    imag[3].children[4].className = "b3";
+                }
+                imag[3].onmouseout = function(){
+                   imag[3].children[4].className = "b4";
+                }
+                imag[4].onmouseover = function(){
+                    imag[4].children[4].className = "b3";
+                }
+                imag[4].onmouseout = function(){
+                   imag[4].children[4].className = "b4";
+                }
+                imag[5].onmouseover = function(){
+                    imag[5].children[5].className = "b3";
+                }
+                imag[5].onmouseout = function(){
+                   imag[5].children[5].className = "b4";
+                }
+                imag[6].onmouseover = function(){
+                    imag[6].children[4].className = "b3";
+                }
+                imag[6].onmouseout = function(){
+                   imag[6].children[4].className = "b4";
+                }
+    </script>
+</html>
