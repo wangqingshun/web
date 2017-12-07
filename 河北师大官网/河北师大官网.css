@@ -1,0 +1,142 @@
+/*
+* @Author: Marte
+* @Date:   2017-12-03 18:31:57
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-12-04 19:53:26
+*/
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #top{
+            width:1000px;
+            height:150px;
+            border-top:5px solid #284c7e;
+            position:relative;
+            left:175px;
+        }
+        #logo{
+            margin-top:25px;
+            float:left;
+        }
+        #right {
+            float:right;
+            margin-top:25px;
+        }
+        #lianjie{
+            height:15px;
+            float:right;
+            margin-right:25px;
+            margin-bottom:10px;
+        }
+        #lianjie > a{
+            color:#f9b14d;
+            font-size:10px;
+            text-decoration:none;
+        }
+        #sousuo{
+            padding-left:20px;
+            height:40px;
+        }
+        #search{
+            width:260px;
+            height:31px;
+            float:left;
+            line-height:31px;
+            border:1px solid #b6b6b6;
+            border-right:0px;
+        }
+        #a1{
+            width:35px;
+            height:35px;
+            background-color:#ffffff;
+            margin-right:20px;
+            background-repeat: no-repeat;
+            background-image:url('images/search.jpg');
+            background-position:center;
+            border-left:0px;
+        }
+        #nav{
+            clear:both;
+        }
+        .b2{
+
+            height:60;
+            list-style:none;
+        }
+        .b4{
+            float:left;
+            width:110px;
+            height:50px;
+            line-height:50px;
+            font-weight:bold;
+            text-align:center;
+        }
+        .b3{
+            float:left;
+            width:110px;
+            height:50px;
+            line-height:50px;
+            font-weight:bold;
+            text-align:center;
+            background-color:#0e6eb8;
+            color:#ffffff;
+        }
+        .b1{
+            list-style:none;
+            position:absolute;
+            z-index: 100;
+        }
+        .b1>li{
+            width:110px;
+            height:50px;
+            line-height:50px;
+            font-weight:bold;
+            text-align:center;
+            display:none;
+        }
+        .b2>li:hover .b1>li{
+            width:110px;
+            height:50px;
+            line-height:50px;
+            font-weight:bold;
+            text-align:center;
+            background-color:#0e6eb8;
+            color:#ffffff;
+            display:block;
+        }
+        #banner{
+            width:1200px;
+            height:397px;
+            z-index:1;
+            margin:10px auto;
+            overflow:hidden;
+            position:relative;
+        }
+        #banner a{
+            display:none;
+        }
+        .btn{
+            background:url(images/background.png);
+            width:1002px;
+            height:73px;
+            position:absolute;
+            left:100px;
+            bottom:0px;
+        }
+        .btn>span{
+            display:block;
+            width:50px;
+            height:73px;
+            line-height:73px;
+            text-align:center;
+            color:#ffffff;
+            font-size:25px;
+            cursor:pointer;
+        }
+        #prior{
+            float:left;
+        }
+        #next{
+            float:right;
+        }

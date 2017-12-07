@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>河北师大官网</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="河北师大官网.css"/>
+</head>
+<body>
+    <div id="top">
+        <div id="logo"><img src="images/logo.png"></div>
+        <div id="right">
+            <div id="lianjie">
+               <a href="#">旧版网页</a>
+               &nbsp;&nbsp;
+               <a href="#">English&nbsp;Version</a>
+            </div>
+            <div id="sousuo">
+                <from>
+                    <input id="search" type="text" value="搜索">
+                    <input id="a1" name="" value="" type="submit">
+                </from>
+            </div>
+        </div>
+        <div id="nav">
+            <ul class="b2">
+                <li class="b4">首页</li>
+                <li class="b4">学校概况
+                    <ul class="b1">
+                        <li>学校简介</li>
+                        <li>学科专业</li>
+                        <li>治理构架</li>
+                        <li>历史沿革</li>
+                        <li>学校标志</li>
+                        <li>校园风光</li>
+                        <li>校园地图</li>
+                    </ul>
+                </li>
+                <li class="b4">机构设置
+                <ul class="b1">
+                        <li>教学单位</li>
+                        <li>管理服务</li>
+                        <li>附属单位</li>
+                        <li>汇华学院</li>
+                    </ul>
+                </li>
+                <li class="b4">人才培养
+                <ul class="b1">
+                        <li>师资队伍</li>
+                        <li>本科生教育</li>
+                        <li>研究生教育</li>
+                        <li>继续教育</li>
+                        <li>留学生教育</li>
+                        <li>中外合作办学</li>
+                    </ul>
+                </li>
+                <li class="b4">科学研究
+                <ul class="b1">
+                        <li>科学研究平台</li>
+                        <li>自然科学与技术</li>
+                        <li>人文与社会科学</li>
+                        <li>合作交流</li>
+                        <li>学术刊期</li>
+                    </ul>
+                </li>
+                <li class="b4">招生就业
+                <ul class="b1">
+                        <li>本科生招生</li>
+                        <li>研究生招生</li>
+                        <li>继续教育招生</li>
+                        <li>留学招生</li>
+                        <li>就业服务</li>
+                    </ul>
+                </li>
+                <li class="b4">人才招聘</li>
+                <li class="b4">公共服务
+                <ul class="b1">
+                        <li>本科生服务</li>
+                        <li>研究生服务</li>
+                        <li>行政事务服务</li>
+                        <li>图书情报服务</li>
+                        <li>预决算公开</li>
+                        <li>生活服务</li>
+                        <li>网络服务</li>
+                    </ul>
+                </li>
+                <li class="b4">校友会</li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner">
+        <a href="#" style="display:block;"><img src="images/img1.jpg"></a>
+        <a href="#"><img src="images/img2.jpg"></a>
+        <a href="#"><img src="images/img3.jpg"></a>
+        <a href="#"><img src="images/img4.jpg"></a>
+        <a href="#"><img src="images/img5.jpg"></a>
+        <a href="#"><img src="images/img6.jpg"></a>
+        <a href="#"><img src="images/img7.jpg"></a>
+        <a href="#"><img src="images/img8.jpg"></a>
+        <div class="btn">
+            <span id="prior"><</span>
+            <span id="next">></span>
+        </div>
+    </div>
+</body>
+<script>
+    var x=0;
+    var i=0;
+    var b2=document.getElementsByClassName("b2")[0].children;
+    for(;i<9;i++)
+    {
+        b2[i].onmouseover=function(){
+            this.className="b3";
+        }
+        b2[i].onmouseout=function(){
+            this.className="b4";
+        }
+    }
+    var box=document.getElementById("banner");
+    links=box.children;
+    function f(){
+        links[x%8].style.display="none";
+        x++;
+        links[x%8].style.display="block";
+    }
+    var timer=setInterval(f,2000);
+    box.onmouseover=function(){
+        clearInterval(timer);
+    }
+    box.onmouseout=function(){
+        setInterval(f,2000);
+    }
+    var prior=document.getElementById("prior");
+    var next=document.getElementById("next");
+    prior.onclick=function(){
+        if(x<=0)
+            {x=8;}
+        links[x%8].style.display="none";
+        x--;
+        links[x%8].style.display="block";
+    }
+    next.onclick=function(){
+        links[x%8].style.display="none";
+        x++;
+        links[x%8].style.display="block";
+    }
+</script>
+</html>
