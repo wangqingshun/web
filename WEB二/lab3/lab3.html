@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lab3</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        #box{
+            position:relative;
+            margin:auto;
+            margin-top:100px;
+            border:1px solid black;
+            width:483px;
+            height:280px;
+        }
+        .top{
+            width:463px;
+            height:30px;
+            font-size:15px;
+            line-height:30px;
+            padding-left:20px;
+            background-color:#f3f8fe;
+        }
+        .image{
+            width:463px;
+            height:35px;
+            margin-top:10px;
+            margin-left:20px;
+        }
+        .image img{
+            float:left;
+            padding-right:10px;
+        }
+        textarea{
+            width:450px;
+            height:170px;
+            margin-left:20px;
+            border:1px solid black;
+        }
+        .anniu{
+            width:75px;
+            height:20px;
+            line-height:20px;
+            text-align: center;
+            border:1px solid black;
+            background-color:#ffffff;
+            position:absolute;
+            left:390px;
+            top:249px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="top">
+            <p>宝贝与描述相符（打分匿名）</p>
+        </div>
+        <div class="image">
+            <img src="images/star0.png" name="0">
+            <img src="images/star0.png" name="1">
+            <img src="images/star0.png" name="2">
+            <img src="images/star0.png" name="3">
+            <img src="images/star0.png" name="4">
+        </div>
+        <from>
+            <textarea  id="wenben">
+            </textarea>
+            <button class="anniu">公开评论<img src="images/sanjiao.png"></button>
+        </from>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        var img=document.getElementsByTagName("img");
+        var wenben=document.getElementById("wenben");
+        var arr=new Array("极差","差","一般","满意","很满意");
+        var con=false;
+        function starPic(i){
+            if(con==true)
+                return;
+            else{
+            var a;
+            if(i<2)
+            {
+                for(a=0;a<=i;a++)
+                {
+                    img[a].src="images/star1.png";
+                    wenben.innerHTML=arr[a];
+                }
+            }
+            else
+            {
+                for(a=0;a<=i;a++)
+                {
+                    img[a].src="images/star2.png";
+                    wenben.innerHTML=arr[a];
+                }
+            }
+        }
+        }
+        function hide(){
+            if(con==true)
+                return;
+            else{
+                for(var e=0;e<5;e++)
+                {
+                    img[e].src="images/star0.png";
+                    wenben.innerHTML="";
+                }
+            }
+        }
+        function pd(x){
+            var a;
+            if(x<2)
+            {
+                for(a=0;a<=x;a++)
+                {
+                    img[a].src="images/star1.png";
+                    wenben.innerHTML=arr[a];
+                    con=true;
+                }
+            }
+            else
+            {
+                for(a=0;a<=x;a++)
+                {
+                    img[a].src="images/star2.png";
+                    wenben.innerHTML=arr[a];
+                    con=true;
+                }
+            }
+        }
+           img[0].onmouseover=function() {
+                starPic(0);
+            }
+            img[1].onmouseover=function() {
+                starPic(1);
+            }
+            img[2].onmouseover=function() {
+                starPic(2);
+            }
+            img[3].onmouseover=function() {
+                starPic(3);
+            }
+            img[4].onmouseover=function() {
+                starPic(4);
+            }
+        for(var i=0;i<5;i++)
+        {
+            img[i].onmouseout=function() {
+                hide();
+            }
+        }
+            img[0].onclick=function() {
+                pd(0);
+        }
+            img[1].onclick=function() {
+                pd(1);
+            }
+            img[2].onclick=function() {
+                pd(2);
+            }
+            img[3].onclick=function() {
+                pd(3);
+            }
+            img[4].onclick=function() {
+                pd(4);
+            }
+    }
+</script>
+</html>
