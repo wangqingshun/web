@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>唯品会首页</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        .top{
+            width:1365px;
+            height:35px;
+            position:relative;
+            background-color:#f5f5f5;
+        }
+        .top1{
+            position:absolute;
+            left:500px;
+            list-style:none;
+        }
+        .top1 >li{
+            float:left;
+            line-height:35px;
+            font-size:14px;
+            font-family:微软雅黑;
+            padding-left:15px;
+            cursor:pointer;
+        }
+        .top1 >li:hover{
+            color:#f10180;
+        }
+        .top3{
+            list-style:none;
+            background-color:#fff;
+            color:#000;
+            display:none;
+        }
+        .top3show >li:hover{
+            color:#f10180;
+        }
+        .top3show{
+            position:absolute;
+            z-index:100;
+            font-size:10px;
+            list-style:none;
+            border:1px solid #000;
+            background-color:#fff;
+            color:#000;
+            display:block;
+        }
+        .logo{
+            z-index:1;
+            height:100px;
+            width:1365px;
+            position:relative;
+            background-color:#fff;
+        }
+        .left{
+            position:absolute;
+            left:200px;
+            float:left;
+        }
+        .right{
+            position:absolute;
+            left:350px;
+            top:30px;
+        }
+        .nav{
+            width:1365px;
+            height:40px;
+            color:#fff;
+            background-color:#f10180;
+        }
+        .nav1{
+            position:absolute;
+            left:170px;
+        }
+        .nav1 li{
+            list-style:none;
+            color:#fff;
+            width:60px;
+            height:40px;
+            cursor:pointer;
+            line-height:40px;
+            text-align:center;
+            float:left;
+        }
+        .nav1 li:hover{
+            background-color:#bd1067;
+        }
+        .nav2{
+            list-style:none;
+            position:absolute;
+            left:1050px;
+        }
+        .nav2 li{
+            float:left;
+            padding-left:5px;
+            line-height:40px;
+        }
+        .banner{
+            position:relative;
+            width:1365px;
+            height:471px;
+            background-image:url(images/web二.banner.jpg);
+        }
+        .banner img{
+            display:none;
+            position:absolute;
+            left:238px;
+            top:55px;
+        }
+        .banner span{
+            width:35px;
+            height:60px;
+            line-height:65px;
+            text-align:center;
+            background-color:#828282;
+            cursor:pointer;
+            color:#fff;
+            display:none;
+        }
+        #prior{
+            position:absolute;
+            left:238px;
+            top:210px;
+        }
+        #next{
+            position:absolute;
+            left:1093px;
+            top:210px;
+        }
+        .fenge{
+            position:absolute;
+            left:80px;
+        }
+        .di{
+            position:absolute;
+            left:175px;
+            top:730px;
+        }
+        .di p{
+            float:left;
+            padding:55px;
+        }
+        .di img{
+            padding-left:15px;
+            padding-top:20px;
+        }
+        .di1{
+            width:495px;
+            height:300px;
+            position:relative;
+            background-image:url(images/di1.jpg);
+            margin-left:20px;
+            margin-top:10px;
+            float:left;
+        }
+        .di11{
+            width:450px;
+            height:260px;
+            position:absolute;
+            left:20px;
+            top:20px;
+            background-color:#fff;
+            display:none;
+        }
+        .di2{
+            width:495px;
+            height:300px;
+            background-image:url(images/di2.jpg);
+            margin-left:20px;
+            margin-top:10px;
+            float:left;
+        }
+        .di22{
+            width:450px;
+            height:260px;
+            position:absolute;
+            left:560px;
+            top:30px;
+            background-color:#fff;
+            display:none;
+        }
+        .di3{
+            width:495px;
+            height:300px;
+            background-image:url(images/di3.jpg);
+            margin-left:20px;
+            margin-top:10px;
+            float:left;
+        }
+        .di33{
+            width:450px;
+            height:260px;
+            position:absolute;
+            left:40px;
+            top:340px;
+            background-color:#fff;
+            display:none;
+        }
+        .di4{
+            width:495px;
+            height:300px;
+            background-image:url(images/di4.jpg);
+            margin-left:20px;
+            margin-top:10px;
+            float:left;
+        }
+        .di44{
+            width:450px;
+            height:260px;
+            position:absolute;
+            left:560px;
+            top:340px;
+            background-color:#fff;
+            display:none;
+        }
+        .foot{
+            width:1365px;
+            height:275px;
+            position:relative;
+            top:750px;
+            background-color:#fff;
+        }
+        .footer{
+            width:340px;
+            height:65px;
+            position:absolute;
+            left:500px;
+            background-color:#f43499;
+            color:#fff;
+            line-height:65px;
+            text-align:center;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <ul class="top1">
+            <li>请登录  /</li>
+            <li>注册   /</li>
+            <li><img src="images/qiandao.gif"/>&nbsp;签到有礼 /</li>
+            <li>我的订单  /</li>
+            <li>我的特卖  /<img src="images/xiasanjiao.jpg"/>
+                <ul class="top3">
+                    <li>品牌收藏</li>
+                    <li>商品收藏</li>
+                    <li>我的足迹</li>
+                </ul>
+            </li>
+            <li>会员俱乐部  /<img src="images/xiasanjiao.jpg"/>
+                <ul class="top3">
+                    <li>俱乐部首页</li>
+                    <li>唯品币兑换</li>
+                    <li>免费抽大奖</li>
+                </ul>
+            </li>
+            <li>客户服务 <img src="images/xiasanjiao.jpg"/>
+                <ul class="top3">
+                    <li>联系客服</li>
+                    <li>帮助中心</li>
+                    <li>服务中心</li>
+                    <li>知识产权</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="logo">
+        <div class="left">
+            <img src="images/weipinhui.png"/>
+        </div>
+        <div class="right">
+            <img src="images/logo2.png"/>
+            <img src="images/logo3.png"/>
+            <img src="images/logo4.png"/>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="nav1">
+            <li>首页</li>
+            <li>女装</li>
+            <li>母婴</li>
+            <li>美妆</li>
+            <li>国际</li>
+            <li>男士</li>
+            <li>居家</li>
+            <li>鞋包</li>
+            <li>运动</li>
+            <li>生活</li>
+            <li>更多</li>
+        </ul>
+        <ul class="nav2">
+            <li><img src="images/fenlei.png"/>分类</li>
+            <li>|</li>
+            <li><img src="images/yugao.png"/>预告</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="images/tu1.jpg" style="display:block">
+        <img src="images/tu2.jpg">
+        <img src="images/tu3.jpg">
+        <img src="images/tu4.jpg">
+        <img src="images/tu5.jpg">
+        <span id="prior"><</span>
+        <span id="next">></span>
+    </div>
+    <div class="fenge">
+        <img src="images/temai.png"/>
+    </div>
+    <div class="di">
+        <div class="di1">
+            <div class="di11">
+                <img src="images/di1(1).jpg">
+                <img src="images/di1(2).jpg">
+                <img src="images/di1(3).jpg">
+                <p>¥499</p><p>¥745</p><p>¥745</p>
+            </div>
+        </div>
+        <div class="di2">
+            <div class="di22">
+                <img src="images/di2(1).jpg">
+                <img src="images/di2(2).jpg">
+                <img src="images/di2(3).jpg">
+                <p>¥1880</p><p>¥1380</p><p>¥980</p>
+            </div>
+        </div>
+        <div class="di3">
+            <div class="di33">
+                <img src="images/di3(1).jpg">
+                <img src="images/di3(2).jpg">
+                <img src="images/di3(3).jpg">
+                <p>¥1840</p><p>¥2340</p><p>¥4374</p>
+            </div>
+        </div>
+        <div class="di4">
+            <div class="di44">
+                <img src="images/di4(1).jpg">
+                <img src="images/di4(2).jpg">
+                <img src="images/di4(3).jpg">
+                <p>¥1438</p><p>¥394</p><p>¥398</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="footer">
+            查看更多预告档期
+        </div>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        var x=0;
+        var list=document.getElementsByClassName("top1")[0].children;
+        var box=document.getElementsByClassName("banner")[0];
+        var ban=box.children;
+        var prior=document.getElementById("prior");
+        var next=document.getElementById("next");
+        var di1=document.getElementsByClassName("di1")[0];
+        var di11=document.getElementsByClassName("di11")[0];
+        var di2=document.getElementsByClassName("di2")[0];
+        var di22=document.getElementsByClassName("di22")[0];
+        var di3=document.getElementsByClassName("di3")[0];
+        var di33=document.getElementsByClassName("di33")[0];
+        var di4=document.getElementsByClassName("di4")[0];
+        var di44=document.getElementsByClassName("di44")[0];
+        for(var i=4;i<list.length;i++)
+        {
+            list[i].onmouseover=function(){
+                this.children[1].className="top3show";
+            }
+            list[i].onmouseout=function(){
+                this.children[1].className="top3";
+            }
+        }
+        function f(){
+            ban[x%5].style.display="none";
+            x++;
+            ban[x%5].style.display="block";
+        }
+        var timer=setInterval(f, 1000);
+        box.onmouseover=function(){
+            clearInterval(timer);
+            prior.style.display="block";
+            next.style.display="block";
+        }
+        box.onmouseout=function(){
+            timer=setInterval(f,1000);
+            prior.style.display="none";
+            next.style.display="none";
+        }
+        prior.onclick=function(){
+            if(x<=0){
+                    x=4;
+                }
+            ban[x%5].style.display="none";
+            x--;
+            ban[x%5].style.display="block";
+        }
+        next.onclick=function(){
+            ban[x%5].style.display="none";
+            x++;
+            ban[x%5].style.display="block";
+        }
+        di1.onmouseover=function(){
+            di11.style.display="block";
+        }
+        di1.onmouseout=function(){
+            di11.style.display="none";
+        }
+        di2.onmouseover=function(){
+            di22.style.display="block";
+        }
+        di2.onmouseout=function(){
+            di22.style.display="none";
+        }
+        di3.onmouseover=function(){
+            di33.style.display="block";
+        }
+        di3.onmouseout=function(){
+            di33.style.display="none";
+        }
+        di4.onmouseover=function(){
+            di44.style.display="block";
+        }
+        di4.onmouseout=function(){
+            di44.style.display="none";
+        }
+    }
+</script>
+</html>
