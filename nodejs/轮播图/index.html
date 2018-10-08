@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <style>
+        #banner{
+            width:1200px;
+            height:397px;
+            z-index:1;
+            margin:10px auto;
+            overflow:hidden;
+            position:relative;
+        }
+        #banner a{
+            display:none;
+        }
+        #b1>span{
+            display:block;
+            width:50px;
+            height:73px;
+            line-height:73px;
+            text-align:center;
+            color:#ffffff;
+            font-size:25px;
+            cursor:pointer;
+        }
+        #prior{
+            float:left;
+            display:block;
+        }
+        #next{
+            float:right;
+            display:block;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var x=0;
+            var box=document.getElementById("banner");
+            links=box.children;
+              function f(){
+                links[x%8].style.display="none";
+                x++;
+                links[x%8].style.display="block";
+            }
+                var timer=setInterval(f,2000);
+            var prior=document.getElementById("prior");
+            var next=document.getElementById("next");
+            prior.onclick=function(){
+            if(x<=0){x=8;}
+            links[x%8].style.display="none";
+            x--;
+            links[x%8].style.display="block";
+            }
+            next.onclick=function(){
+                links[x%8].style.display="none";
+                x++;
+                links[x%8].style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="banner">
+        <a href="#" style="display:block;"><img src="images/img1.jpg"></a>
+        <a href="#"><img src="images/img2.jpg"></a>
+        <a href="#"><img src="images/img3.jpg"></a>
+        <a href="#"><img src="images/img4.jpg"></a>
+        <a href="#"><img src="images/img5.jpg"></a>
+        <a href="#"><img src="images/img6.jpg"></a>
+        <a href="#"><img src="images/img7.jpg"></a>
+        <a href="#"><img src="images/img8.jpg"></a>
+        <div id="b1">
+            <span id="prior"><</span>
+            <span id="next">></span>
+        </div>
+    </div>
+</body>
+</html>
