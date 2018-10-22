@@ -1,0 +1,36 @@
+<div class="t1">
+  <h3>同步课/{{course?.Name}}</h3>
+  <div class="inside1">
+    √已加入
+  </div>
+  <div class="inside2">
+    <span style="margin-left:450px;line-height: 3; margin-top:20px; font-size: 2em;color:#ff6e3d">0.00</span>
+    <span style="font-size:1em; margin-top:250x; color:#ff6e3d">分</span>
+    <span style="line-height: 3; margin-top:20px; font-size: 2em;color:#666">/</span>
+    <span style="line-height: 3; margin-top:20px; font-size: 2em;color:#03b8cf">40</span>
+    <span style="font-size:1em; margin-top:20px; color:#03b8cf">分</span>
+    <span style="line-height: 3; margin-top:20px; font-size: 2em;color:#666">/</span>
+    <span style="line-height: 3; margin-top:20px; font-size: 2em;color:#38b03f">20</span>
+    <span style="font-size:1em; margin-top:20px; color:#38b03f">分</span>
+  </div>
+  <div class="inside3">
+    <ul>
+      <li>简介</li>
+      <li>互动</li>
+      <li>任务{{course?.task}}</li>
+      <li>成员{{course?.person}}</li>
+    </ul>
+  </div>
+</div>
+<!-- 问号是当course为nudefine时，不会报错 -->
+<!-- <ul>
+  <li [class.active]="true">简介</li>
+  <li [ngclass]="{active:true}">互动</li>
+  <li [style.color]="red">任务</li>
+  <li [ngStyle]="{}">成员</li>
+</ul>
+<div [ngSwitch]="num">
+  <div *ngSwithCase="1">1</div>
+  <div *ngSwithCase="2">2</div>
+  <div *ngSwithCase="3">3</div>
+</div> -->
