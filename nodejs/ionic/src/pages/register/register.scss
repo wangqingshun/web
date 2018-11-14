@@ -1,0 +1,21 @@
+page-register {
+    ion-content{
+        background-image: url(../../assets/imgs/注册背景.jpg);
+        background-size:cover;
+        .box{
+
+            color:white;
+            ion-input{
+                
+            }
+            button{
+                color:white;
+            }
+            p{
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+    
+}

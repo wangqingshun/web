@@ -1,0 +1,84 @@
+page-home {
+    .list1{
+        padding-left:0!important; 
+        margin:0px;
+        height:44px;
+        line-height: 44px;
+        list-style: none;
+        .frist{
+            border-bottom: 4px solid #ffdb2c;
+        }
+        li{
+            width:25%;
+            height:44px;
+            float:left;
+            text-align: center;
+        }
+    }
+    .tuijian{
+        .sli{
+            height:auto;
+            .img{
+                width:100%;
+            }
+        }
+        .subtitle{
+            height:62px;
+            width:100%;
+            letter-spacing: 5px;
+            background: url(../../assets/imgs/hot.png) no-repeat center;
+        }
+        .goods{
+            padding:0px;
+            img{
+                width:100%;
+            }
+            li{
+                width:45%;
+                float: left;
+                margin:5px 0 5px 3%;
+            }
+        }
+    }
+    .jiaju{
+        .sli{
+            height:auto;
+            .img{
+                width:100%;
+            }
+        }
+        .box1{
+            height:110px;
+            ul{
+                padding: 0!important;
+                list-style: none;
+            }
+            li{
+                width:27%;
+                height:100px;
+                float: left;
+                margin:5px 0 5px 5%;
+                .img{
+                    width:100%;
+                }
+            }
+        }
+        .subtitle{
+            height:62px;
+            width:100%;
+            letter-spacing: 5px;
+            background: url(../../assets/imgs/家具orange.png) no-repeat center;
+        }
+        .goods{
+            padding:0px;
+            img{
+                width:100%;
+            }
+            li{
+                width:45%;
+                float: left;
+                margin:5px 0 5px 3%;
+            }
+        }
+    }
+}

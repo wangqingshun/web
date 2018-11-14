@@ -1,0 +1,114 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face{
+    font-family:"ionicons";
+    src:url('../assets/font/iconfont.eot');
+    src: url('../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/iconfont.woff') format('woff'),
+    url('../assets/fonts/iconfont.ttf') format('truetype'),
+    url('../assets/fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"Ionicons" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ion-ios-myName:before {
+    content: "\ebc";
+}
+.ion-ios-myName -outline:before {
+    content: "\e6bc";
+}
+.ion-md-myName:before {
+    content: "\e748";
+}
+
+
+//首页
+.tabs-ios .tab-button[aria-selected=true] .ion-ios-shouye:before {
+    content: "\e6bc";
+    background:"yel";
+}
+.tabs-ios .tab-button[aria-selected=false] .ion-ios-shouye-outline:before {
+    content: "\e6bc";
+}
+.tabs-md .tab-button[aria-selected=true] .ion-md-shouye:before {
+    content: "\e6bc";
+    background:"yel";
+}
+.tabs-md .tab-button[aria-selected=false] .ion-md-shouye:before {
+    content: "\e6bc";
+}
+
+
+//商城
+.tabs-ios .tab-button[aria-selected=true] .ion-ios-shangcheng:before {
+    content: "\e65a";
+    background:"yel";
+}
+.tabs-ios .tab-button[aria-selected=false] .ion-ios-shangcheng-outline:before {
+    content: "\e65a";
+}
+.tabs-md .tab-button[aria-selected=true] .ion-md-shangcheng:before {
+    content: "\e65a";
+    background:"yel";
+}
+.tabs-md .tab-button[aria-selected=false] .ion-md-shangcheng:before {
+    content: "\e65a";
+}
+
+
+//灵感
+.tabs-ios .tab-button[aria-selected=true] .ion-ios-linggan:before {
+    content: "\e6a4";
+    background:"yel";
+}
+.tabs-ios .tab-button[aria-selected=false] .ion-ios-linggan-outline:before {
+    content: "\e6a4";
+}
+.tabs-md .tab-button[aria-selected=true] .ion-md-linggan:before {
+    content: "\e6a4";
+    background:"yel";
+}
+.tabs-md .tab-button[aria-selected=false] .ion-md-linggan:before {
+    content: "\e6a4";
+}
+
+
+//我的
+.tabs-ios .tab-button[aria-selected=true] .ion-ios-wode:before {
+    content: "\e615";
+    background:yel;
+}
+.tabs-ios .tab-button[aria-selected=false] .ion-ios-wode-outline:before {
+    content: "\e615";
+}
+.tabs-md .tab-button[aria-selected=true] .ion-md-wode:before {
+    content: "\e615";
+    background:yel;
+}
+.tabs-md .tab-button[aria-selected=false] .ion-md-wode:before {
+    content: "\e615";
+}

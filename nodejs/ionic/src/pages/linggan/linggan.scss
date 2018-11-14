@@ -1,0 +1,23 @@
+page-linggan {
+    .list1{
+        list-style: none;
+        li{
+            position: relative;
+            width:100%;
+            height:auto;
+            .inside1{
+                width:200px;
+                height:160px;
+                position: absolute;
+                left:23%;
+                top:20%;
+                background:#171717;
+                opacity: 0.6;
+                text-align: center;
+                h2,p{
+                    color:white;
+                }
+            }
+        }
+    }
+}

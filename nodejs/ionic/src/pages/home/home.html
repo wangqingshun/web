@@ -1,0 +1,119 @@
+<ion-header text-center no-border>
+    <ion-navbar color="yel">
+        <button ion-button icon-only menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>桔家</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only>
+                <ion-icon name="search"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ul class="list1" >
+        <li (click)="setlist('tuijian')" [class.frist]="list=='tuijian'">
+            推荐
+        </li>
+        <li (click)="setlist('jiaju')" [class.frist]="list=='jiaju'">
+            家具
+        </li>
+        <li (click)="setlist('canchu')" [class.frist]="list=='canchu'">
+            餐厨
+        </li>
+        <li (click)="setlist('yongpin')" [class.frist]="list=='yongpin'">
+            床上用品
+        </li>
+    </ul>
+    <div [ngSwitch]="list">
+        <div *ngSwitchCase="'tuijian'" class="tuijian">
+            <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+                <ion-slide>
+                    <img src="../../assets/imgs/slide1.png" alt="01">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/slide1.png" alt="01">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/slide1.png" alt="01">
+                </ion-slide>
+            </ion-slides>
+            <div class="subtitle">
+                <h3 text-center>热|门|推|荐</h3>
+                <p text-center>PECOMMENDATION</p>
+            </div>
+            <ul class="goods">
+                <li>
+                    <img src="../../assets/imgs/1首页_03.png" alt="">
+                </li>
+                <li>
+                    <img src="../../assets/imgs/1首页_05.png" alt="">
+                </li>
+                <li>
+                    <img src="../../assets/imgs/1首页_09.png" alt="">
+                </li>
+                <li>
+                    <img src="../../assets/imgs/1首页_10.png" alt="">
+                </li>
+                <li>
+                    <img src="../../assets/imgs/1首页_03.png" alt="">
+                </li>
+                <li>
+                    <img src="../../assets/imgs/1首页_05.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div *ngSwitchCase="'jiaju'" class="jiaju">
+            <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+                <ion-slide>
+                  <img src="../../assets/imgs/家居banner_02.jpg" alt="01">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/家居banner_02.jpg" alt="01">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/家居banner_02.jpg" alt="01">
+                </ion-slide>
+              </ion-slides>
+              <div class="box1">
+                <ul>
+                  <li><img src="../../assets/imgs/2家居页_01.jpg" alt=""></li>
+                  <li><img src="../../assets/imgs/2家居页_02.jpg" alt=""></li>
+                  <li><img src="../../assets/imgs/2家居页_03.jpg" alt=""></li>
+                </ul>
+              </div>
+              <div class="subtitle">
+                <h3 text-center>桔|子|家|具</h3>
+                <p text-center>Orange&nbsp;Household</p>
+              </div>
+                <ul class="goods">
+                  <li>
+                    <img src="../../assets/imgs/1首页_03.png" alt="">
+                  </li>
+                  <li>
+                    <img src="../../assets/imgs/1首页_05.png" alt="">
+                  </li>
+                  <li>
+                    <img src="../../assets/imgs/1首页_09.png" alt="">
+                  </li>
+                  <li>
+                    <img src="../../assets/imgs/1首页_10.png" alt="">
+                  </li>
+                  <li>
+                      <img src="../../assets/imgs/1首页_03.png" alt="">
+                    </li>
+                    <li>
+                      <img src="../../assets/imgs/1首页_05.png" alt="">
+                    </li>
+                </ul>
+        </div>
+        <div *ngSwitchCase="'canchu'">
+            <h1>餐厨</h1>
+        </div>
+        <div *ngSwitchCase="'yongpin'">
+            <h1>床上用品</h1>
+        </div>
+    </div>
+    
+</ion-content>

@@ -1,0 +1,64 @@
+page-about {
+    .banner{
+        height:100px;
+        img{
+            width:100%;
+            height:99px;
+        }
+    }
+    .list1{
+        list-style: none;
+        .spacil{
+            background: #ffdb2c;
+        }
+        li{
+            
+            width:20%;
+            height:40px;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+    .box1{
+        height:30px;
+        line-height: 30px;
+        p{
+            margin-left:33%;
+            float:left;
+        }
+    }
+    .list2{
+        list-style: none;
+        li{
+            position: relative;
+            z-index: 10;
+            width:47%;
+            height:165px;
+            float: left;
+            margin:20px 0 0 2%;
+            img{
+                width:100%;
+                text-align: center
+            }
+            .box2{
+                position: absolute;
+                z-index: 50;
+                height:50%;
+                top:57%;
+                background: #898079;
+                opacity: 0.8;
+                text-align: center;
+                p{
+                    color: white;
+                    font-size: 16px;
+                    letter-spacing: 4px;
+                }
+                span{
+                    color:#c3a423;
+                    letter-spacing: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+page-b {
+    *{
+        background: #ffdb2c;
+    }
+    .list1{
+        list-style: none;
+        margin-top:16%;
+        li{
+            width:50%;
+            height:180px;
+            float:left;
+            text-align: center;
+            margin-top:5%;
+            img{
+                width:90px;
+                height:90px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
